@@ -140,8 +140,12 @@ class UVRWebUI:
 
         return primary_audio, secondary_audio, msg
 
+
+    theme = "aliabid94/new-theme"
+
+    
     def define_layout(self):
-        with gr.Blocks() as app:
+        with gr.Blocks(theme) as app:
             self.app = app
             gr.HTML("<h1> 🎵 Ultimate Vocal Remover 5.6 for Google Colab 🎵 </h1>")
             gr.Markdown("## Colab created by [Not Eddy (Spanish Mod)](http://discord.com/users/274566299349155851) in [AI HUB](https://discord.gg/aihub) server.")
